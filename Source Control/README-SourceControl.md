@@ -8,6 +8,8 @@
 >
 >If something goes wrong, you can make comparisons in different code versions and revert to any previous version that you want.
 
+Below are some of the differnt flavors of SCM software and services.
+
 ## [Git](Git/Git.md)
 
 >Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.

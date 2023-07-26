@@ -48,10 +48,10 @@ This part maybe slow and self explanitory for some.
     ``git config --global user.email "[email@email.com]"``  
 
     3. #### Basic Config Options
-    - The following command setups the colors in the Git CMD and Bash
+    - The following command setups the colors in the Git CMD and Bash  
     ``git config --global color.ui auto``
 
-    - this command sets your default branch name to *main* from the antiquated *master*, if you didn't do that in the inital setup when installing Git.
+    - this command sets your default branch name to *main* from the antiquated *master*, if you didn't do that in the inital setup when installing Git.  
     ``git config --global init.defaultBranch main``
 
 

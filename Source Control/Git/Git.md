@@ -29,22 +29,30 @@ This part maybe slow and self explanitory for some.
     [Info about GCM](https://github.com/git-ecosystem/git-credential-manager/blob/HEAD/docs/faq.md#about-the-project)
 
 ### Setup
-3. Inital Setup - 
+3. After you finish installing Git, you're going to need to setup the config a bit. To do that we will need to open a Git Terminal, either GitBash or GitCMD will work for this. Once open we will begin setup.
+    1. #### Name Setup
+    Attached your name to Git. This is very important because this name will be attached to every commit you make. You have two options with this. You cam attach your first and last names, or you can enter your chosen username that you associate with a *Git Repo Service* such as **GitHub**.  
+    Run the following command in the Git Terminal(remove the square brackets entering your information, but leave the quotes):  
+    ``git config --global user.name "[firstname lastname]"``  
+    or  
+    ``git config --global user.name "[name]"``  
+    The ``--global`` flag assigns this name to the entire computer config.
 
 
-## Basic Commands & Their Purpose
+    2. #### Email Setup
+    Attach your email to Git. Arguably just as important as the name attached, this is the email you associate with your Git. If you are using an online service such as **GitHub** you should use the email associated with that account. (GitHub has an anonymous email you can use to links your username.)  
+    Run the following
+    Command in the Git
+    Terminal(remove the
+    square brackets entering your information, but leave the quotes):  
+    ``git config --global user.email "[email@email.com]"``  
 
-### Config & Basic Setup
-``git config --global user.name “[firstname lastname]”``  
-or  
-``git config --global user.name “[name]”``
+    3. #### Basic Config Options
+    - The following command setups the colors in the Git CMD and Bash
+    ``git config --global color.ui auto``
 
+    - this command sets your default branch name to *main* from the antiquated *master*, if you didn't do that in the inital setup when installing Git.
+    ``git config --global init.defaultBranch main``
 
-
-``git config --global user.email "myemail@gmail.com"``
-
-``git config --global color.ui auto`` sets up colors in the cmd and bash
-
-``git config --global init.defaultBranch main`` changes the default origin directory to "main" from the antiquated "master"
 
 

@@ -196,4 +196,7 @@ A common repository on GitHub that all team member use to exchange their changes
 A copy of a repository on GitHub owned by a different user
 ### pull request
 A place to compare and discuss the differences introduced on a branch with reviews, comments, integrated 
-tests, and mor
+tests, and more.
+
+## Try it Out!
+

@@ -126,7 +126,7 @@ Merge & squash all commits into one new commit
 
 
 ## Rebasing
-Rebase *feature* branch onto *main* (to incorporate new changes made to main). Prevents unnecessary merge commits into feature, keeping history clean.
+Rebase *feature* branch onto *main* (to incorporate new changes made to main). Prevents unnecessary merge commits into feature, keeping history clean.  
 <img src="assets/Git-Rebase.png" alt="Simple git merging diagram" width="250"/>  
 Credit to dev.to/doabledanny
 

@@ -163,6 +163,7 @@ Go back to a previous commit & delete all commits ahead of it **(revert is safer
 ``git reset [file]``  
 Unstage a file while retaining the changes in the working directory.
 
+
 ## Review your Repo
 
 ``git status``  
@@ -213,6 +214,7 @@ Delete stash at index 1. Omit ``stash@{n}`` to delete last stash made
 `` git stash clear``  
 Delete all stashes
 
+
 ## Synchronizing
 
 ``git remote add [alias] [url]``  
@@ -224,42 +226,29 @@ View all remote connections. Add ``-v`` flag to view urls.
 ``git remote remove [alias]``  
 Remove a connection
 
+``git remote rename [old] [new]``  
+Rename a connection
 
+``git fetch [alias]``  
+Fetch all branches from remote repo (no merge)
 
+``git fetch [alias] [branch]``  
+Fetch a specfic branch
 
-
-
-
-
-
-
-
-
-
-
-### Path Changes
-
-``git log --stat -M``  
-Display all commit logs relating to any paths that moved.
-
-### Branch & Merge 
-
-``git log``  
-Displays all commits in current branches working directory.  
-
-### Share & Update
-
-``git fetch [alias]``   
-Fetch all branches from the git *remote*  
+``git pull``  
+Fetch the remote repo's copy of the current branch, then merge.
 
 ``git merge [alias]/[branch]``  
 Merge remote branch onto current branch, bringing it up to date.
 
-``git push [alias] [branch]``  
-Upload local branch commits to remote repository branch.  
+``git pull --rebase [alias]``  
+Move (rebase) your local changes onto the top of new changes made to the remote repo (for clean, linear history).
 
-``git pull``  
-*Fetch* then *merge* any commits from the tracking remote branch.  
+``git push [alias]``  
+Upload local content to remote repo
+
+``git push [alias] [branch]``  
+Upload to a branch (can then pull request)
 
 
 ## Logs
@@ -270,6 +259,9 @@ Displays all commits in current working directory.
 ``git log --follow [file]``  
 Diaplay list of version history including renames for the specified file.  
 
+``git log --stat -M``  
+Display all commit logs relating to any paths that moved.
+
 ``git diff [first-branch]...[second-branch]``  
 Display the content difference between the two specified branches.
 
@@ -278,6 +270,7 @@ Displays metadata and content changes kf the specified commit.
 
 
 ## Ignoring Files and Directories (.gitignore)
+
 A **.gitignore** specifies intentionally untracked files to ignore. In layman's terms; it allows you to specify which files and directories git shouldn't track or add to the repo. 
 
 ### Why?
@@ -329,4 +322,4 @@ tests, and more.
 
 ## Basic Procedure
 ### Initialize or Clone a Repo
-``git init ``
+``git init``

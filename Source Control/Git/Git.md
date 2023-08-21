@@ -257,7 +257,10 @@ Upload to a branch (can then pull request)
 Displays all commits in current working directory.  
 
 ``git log --follow [file]``  
-Diaplay list of version history including renames for the specified file.  
+Display list of version history including renames for the specified file.  
+
+``git log [first-branch]..[second-branch]``  
+Display the difference in the commits.
 
 ``git log --stat -M``  
 Display all commit logs relating to any paths that moved.
@@ -283,6 +286,17 @@ A good rule of thumb for which files and directories  to include would be items 
 Such flies or directories could include:
 JavaScript *Node Modules*, these are easily generated using ``npm install``.
 
+### Ignoring Patterns
+\* is a wildcard
+```
+logs/
+*.notes
+pattern*/
+```
+
+### How to Use
+1. Create a file and name it ``.gitignore`` file within the source directory of the data you are commiting to git.
+2. Enter in the file the gerneralized path to the file(s) you want ignored inrealtion to that source folder, or enter pattern matching critera of files to be ignored. ``.log``
 
 
 ## Glossery
